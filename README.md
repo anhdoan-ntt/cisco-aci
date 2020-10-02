@@ -1,9 +1,9 @@
 # cisco-aci
 Using Cisco ACI sandbox to configuring Cisco APIC
 sandboxapicdc.cisco.com
-1. Requirement
-python3
-Ansible
+# 1. Requirement
+    python3
+    Ansible
 
 # From your working directory
 git clone https://github.com/anhdoan-ntt/cisco-aci
@@ -20,6 +20,6 @@ In an activated python virtual environment the python path will look very simila
 
 /<folder-where-you-cloned-code-samples>/cisco-aci/venv/bin/python
   
-  2. Run the playbook
-  2.1 Create tenant
+ # 2. Run the playbook
+ # 2.1 Create tenant
   ansible-playbook -i inventory 01_aci_tenant_pb.yml
