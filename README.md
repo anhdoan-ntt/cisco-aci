@@ -35,6 +35,6 @@ In an activated python virtual environment the python path will look very simila
  # 2.2. Create a tenant with BD and VRF
  Run the following
  
-    ansible-playbook 02_aci_tenant_network_pb.yml -i inventory --extra-vars "vrf=prod_vrf bd=BD_01"
+    ansible-playbook 02_aci_tenant_network_pb.yml -i inventory --extra-vars "vrf=prod_vrf bd=BD_01 bd_gw=10.0.2.1"
  
  
