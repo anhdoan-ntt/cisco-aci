@@ -1,7 +1,7 @@
 [apic:vars]
 username=admin
 password=ciscopsdt
-ansible_python_interpreter="/Users/bon/CISCO-ACI-Ansible/aci_ansible_learning_labs_code_samples/venv/bin/python"
+ansible_python_interpreter="/Users/bon/cisco-aci/venv/bin/python"
 
 [apic]
 sandboxapicdc.cisco.com
