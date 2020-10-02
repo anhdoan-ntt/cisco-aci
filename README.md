@@ -1,6 +1,6 @@
 # cisco-aci
-Using Cisco ACI sandbox to configuring Cisco APIC
-sandboxapicdc.cisco.com
+Using Ansible in virtual enviroment to configure Cisco ACI. Create and manage Tenants, VRFs, BDs. EPGs. on Cisco ACI fabrics.
+Cisco APIC using: Cisco APIC sandbox: sandboxapicdc.cisco.com
 # 1. Requirement
     python3
     Ansible
