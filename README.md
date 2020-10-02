@@ -38,6 +38,8 @@ In an activated python virtual environment the python path will look very simila
     ansible-playbook 02_aci_tenant_network_pb.yml -i inventory --extra-vars "vrf=prod_vrf bd=BD_01 bd_gw=10.0.2.1"
  
  # 2.3 List all BD in a Tenant
-ansible-galaxy  collection install cisco.aci -c
-ansible-playbook 08_Query_BD.yml -i inventory
+    ansible-galaxy  collection install cisco.aci -c
+
+
+    ansible-playbook 08_Query_BD.yml -i inventory
 
