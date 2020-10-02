@@ -30,6 +30,6 @@ In an activated python virtual environment the python path will look very simila
     ansible-playbook -i inventory 01_aci_tenant_pb.yml
  
  Check if tenant was created by login to:
- https://sandboxapicdc.cisco.com
+ https://sandboxapicdc.cisco.com with
  admin/ciscopsdt
  
