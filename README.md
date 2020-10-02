@@ -32,4 +32,9 @@ In an activated python virtual environment the python path will look very simila
  Check if tenant was created by login to:
  https://sandboxapicdc.cisco.com with
  admin/ciscopsdt
+ # 2.2. Create a tenant with BD and VRF
+ Run the following
+ 
+    ansible-playbook 02_aci_tenant_network_pb.yml -i inventory --extra-vars "vrf=prod_vrf bd=BD_01"
+ 
  
