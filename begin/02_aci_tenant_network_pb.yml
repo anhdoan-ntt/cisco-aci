@@ -5,7 +5,7 @@
   gather_facts: False
   vars_prompt:
     - name: "tenant"
-      prompt: "What would you like to name your Tenant?"
+      prompt: "What is your Tenant name?"
       private: no
 
   tasks:
@@ -41,6 +41,6 @@
         validate_certs: False
         tenant: "{{ tenant }}"
         bd: "{{ bd | default('prod_bd') }}"
-        gateway: "10.10.101.1"
-        mask: 24
+        gateway: "{{ bd_gw | default('10.0.0.1') }}"
+        mask: "{{ bd_mask | default('24') }}"
         description: "Subnet Created Using Ansible"
