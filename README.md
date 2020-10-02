@@ -25,4 +25,9 @@ In an activated python virtual environment the python path will look very simila
   
  # 2. Run the playbook
  # 2.1. Create a tenant
-    ansible-playbook -i inventory 01_aci_tenant_pb.yml
+ Run the command below to create a tenant
+ ansible-playbook -i inventory 01_aci_tenant_pb.yml
+ Check if tenant was created by login to:
+ https://sandboxapicdc.cisco.com
+ admin/ciscopsdt
+ 
