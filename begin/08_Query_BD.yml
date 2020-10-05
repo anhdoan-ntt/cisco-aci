@@ -10,12 +10,14 @@
 
   tasks:
     - name: Query All Bridge Domains
-      cisco.aci.aci_bd:
+      aci_bd:
         host: "{{ ansible_host }}"
         username: "{{ username }}"
         password: "{{ password }}"
         validate_certs: False
         state: query
-        description: "VRF Created Using Ansible"
-      delegate_to: localhost
+        tenant: "{{ tenant }}"
       register: query_result
+
+    - debug:
+        msg: "{{ query_result.current|json_query('[].fvTenant.children[].fvBD.attributes.name') }}"
