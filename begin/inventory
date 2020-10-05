@@ -5,3 +5,10 @@ ansible_python_interpreter="/Users/bon/cisco-aci/venv/bin/python"
 
 [apic]
 sandboxapicdc.cisco.com
+
+[bd]
+BD-001
+BD-002
+BD-003
+
+[bd_gw]
