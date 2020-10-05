@@ -19,7 +19,7 @@
         state: "present"
         validate_certs: False
         tenant: "{{ tenant }}"
-        vrf: "{{ vrf }}"
+        vrf: "{{ vrf | default('prod_bd') }}"
         description: "VRF Created Using Ansible"
 
     - name: Modify a Bridge Domain - disable routing
