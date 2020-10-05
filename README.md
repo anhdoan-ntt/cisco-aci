@@ -42,6 +42,6 @@ In an activated python virtual environment the python path will look very simila
     
  # 2.4 Disable routing on all BDs, enable arp looding
  
-     ansible-playbook 03_aci_tenant_bd.yml -i inventory
+     ansible-playbook 03_aci_tenant_bd_pb.yml -i inventory
  
 
