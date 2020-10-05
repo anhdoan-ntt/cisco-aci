@@ -5,6 +5,7 @@ Cisco APIC using: Cisco APIC sandbox: sandboxapicdc.cisco.com
     python3
 
 From your working directory
+
     git clone https://github.com/anhdoan-ntt/cisco-aci
     cd cisco-aci
     python3 -m venv --clear venv
@@ -12,6 +13,7 @@ From your working directory
     source venv/bin/activate
     cd begin
     pip install -r requirements.txt
+    
 The pip command above will install the latest version of Ansible into your virtual environment and will not conflict with any other Ansible installation.
 
 Change path for file inventory
