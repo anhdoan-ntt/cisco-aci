@@ -3,7 +3,6 @@ Using Ansible in virtual enviroment to configure Cisco ACI. Create and manage Te
 Cisco APIC using: Cisco APIC sandbox: sandboxapicdc.cisco.com
 # 1. Requirement
     python3
-    Ansible
 
 # From your working directory
     git clone https://github.com/anhdoan-ntt/cisco-aci
@@ -32,14 +31,17 @@ In an activated python virtual environment the python path will look very simila
  Check if tenant was created by login to:
  https://sandboxapicdc.cisco.com with
  admin/ciscopsdt
- # 2.2. Create a tenant with BD and VRF
+ # 2.2. Create multiple BDs and VRF
  Run the following
  
-    ansible-playbook 02_aci_tenant_network_pb.yml -i inventory --extra-vars "vrf=prod_vrf bd=BD_01 bd_gw=10.0.2.1"
+    ansible-playbook 02_aci_tenant_network_pb.yml -i inventory --extra-vars "vrf=prod_vrf"
  
  # 2.3 List all BD in a Tenant
-    ansible-galaxy  collection install cisco.aci -c
-
-
+ 
     ansible-playbook 08_Query_BD.yml -i inventory
+    
+ # 2.4 Disable routing on all BDs, enable arp looding
+ 
+     ansible-playbook 03_aci_tenant_bd.yml -i inventory
+ 
 
